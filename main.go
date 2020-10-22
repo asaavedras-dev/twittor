@@ -3,12 +3,12 @@ package main
 import (
 	"log"
 
-	"github.com/asaavedras-dev/twittor/bd"
-	"github.com/asaavedras-dev/twittor/handlers"
+	"twittor/bd"
+	"twittor/handlers"
 )
 
 func main() {
-	if bd.CheaqueoConnection() == 0 {
+	if bd.ChequeoConnection() == 0 {
 		log.Fatal("Sin conexión a la BDD")
 		return
 	}
